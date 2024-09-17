@@ -34,7 +34,7 @@ This project is my submission for the AWS Cloud Resume Challenge, a hands-on lea
 
 ## Architecture 
 
-![Architecture Diagram](images/crc_architecture.png)
+![Architecture Diagram](images/awscrc_architecture.png)
 > Building my full-stack resume on AWS
 
 This blog is about how I build my resume as website entirely on AWS. This is a challenge created by [Forrest Brazeal](https://twitter.com/forrestbrazeal), Which helped many peoples who wants to step into Cloud technology but doesn't have experience. 
@@ -72,6 +72,8 @@ I started with DynamoDB. I created a table which stores Visitors count, its a si
 
 Next I created a Lambda function using Python to query DynamoDB to get the Visitors count. This same Lambda function would update the visitors count every time the website was accessed. 
 
+![crc_gif](images/crc_gif.gif)
+
 ### 6. Infrastructure as a Code (IaC)
 
 This is the fun part which I loved to do in this project. Even though the challenge was to use SAM as IaC I decided to use Terraform since am familiar with it. I build the entire stack with Terraform 💯, never configured any of the AWS service via GUI. This helps me understand TF a lot more. 
@@ -102,4 +104,4 @@ At the end we now have our resume hosted on AWS and its available for the world 
 I'm happy that I have completed this challenge as expected. I was able to put all my AWS and Terraform knowledge on this project and am glade to learn something new. 
 Eager to do more challenges like this.
 
-Please checkout[my website](https://awsresume.darvinpatel.com/)
+Please checkout [my website](https://awsresume.darvinpatel.com/)
