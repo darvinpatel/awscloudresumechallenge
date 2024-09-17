@@ -16,20 +16,20 @@ This project is my submission for the AWS Cloud Resume Challenge, a hands-on lea
   - API Gateway
   - AWS Lambda
   - DynamoDB
-  - CloudWatch
+  - IAM
 
 - **Tools & Frameworks:**
   - git
   - HTML, CSS, JavaScript
   - HashiCorp Terraform
-  - GitLab CI
-  - Aquasec tfsec 
+  - Github Actions
+ 
 
 ## Project Structure
 
-- **`/assets`**: Contains the source code for the resume website.
-- **`/terraforms`**: Holds the Terraform modules created and used to define the AWS infrastructure.
-- **`.gitlab-ci.yml`**: The GitLab CI configuration for deployment
+- **`/frontnend`**: Contains the source code for the resume website.
+- **`/infra`**: Holds the Terraform modules created and used to define the AWS infrastructure.
+- **`.github/workflows/front-end-cicd.yml`**: The Github Actions CI configuration for deployment
 - **`/images`**: Screenshot for this README depicting the architecture
 
 ## Architecture 
@@ -72,7 +72,7 @@ I started with DynamoDB. I created a table which stores Visitors count, its a si
 
 Next I created a Lambda function using Python to query DynamoDB to get the Visitors count. This same Lambda function would update the visitors count every time the website was accessed. 
 
-![crc_gif](images/crc_gif.gif)
+![crc_gif](images/Backend-Arch.png)
 
 ### 6. Infrastructure as a Code (IaC)
 
@@ -84,11 +84,15 @@ I went with GitHub actions to automate my workflow.
 
 Front-end Actions will checkout the HTML/CSS codes and sync to S3 bucket
 
+![crc_gif](images/cicd-1.png)
+
 Back-end Actions consist of two GitHub Actions workflow 
 - Terraform Plan
 - Terraform Apply
 
 I configured Terraform Apply job in a such a way that it will trigger only if the code is merged from FeatureBranch to Main branch. 
+
+![crc_gif](images/cicd-2.png)
 
 ### 8. Visitor Count
 
