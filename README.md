@@ -19,7 +19,7 @@ This project is my submission for the AWS Cloud Resume Challenge, a hands-on lea
   - IAM
 
 - **Tools & Frameworks:**
-  - git
+  - Git
   - HTML, CSS, JavaScript
   - HashiCorp Terraform
   - Github Actions
