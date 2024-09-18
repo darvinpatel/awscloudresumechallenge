@@ -4,7 +4,13 @@
 
 ## Overview
 
-This project is my submission for the AWS Cloud Resume Challenge, a hands-on learning experience to showcase proficiency in Amazon Web Services (AWS) by building a resume-styled website hosted entirely on AWS serverless infrastructure.
+This project is my submission for the AWS Cloud Resume Challenge, a hands-on learning experience to showcase proficiency in Amazon Web Services (AWS) by building a resume-styled website hosted entirely on AWS serverless infrastructure. Checkout different services and their behavior below :
+
+- Resume hosted on AWS - [Site](https://awsresume.darvinpatel.com/)
+- API trigger on API Gateway - [API](https://8hvxck6m48.execute-api.ap-southeast-2.amazonaws.com/visitorcountapi)
+  ![API-Gatway_gif](images/API.gif)
+- Lamba function trigger - [Lambda Function Call](https://o3zkisebsdu5vytegpigjx66f40pkpwf.lambda-url.ap-southeast-2.on.aws/)
+  ![Lambda_gif](images/Lambda.gif)
 
 ## Technologies Used
 
